@@ -21,10 +21,10 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 
 | Sr. No | Date         | Project Name                              | Status      | Level        |
 |--------|--------------|-------------------------------------------|-------------|--------------|
-| 1      | 15 March 2025| [Password Show/Hide]                 | Completed   | Beginner     |
-| 2      | 15 March 2025| [Password Strength Shower]           | Completed   | Beginner     |
-| 3      | 15 March 2025| [Dark/Light Theme Toggle]            | Completed   | Intermediate |
-| 4      | 15 March 2025| [Basic Pop-Up Modal]                 | Completed   | Beginner     |
+| 1      | 15 March 2025| Password Show/Hide                 | Completed   | Beginner     |
+| 2      | 15 March 2025| Password Strength Shower           | Completed   | Beginner     |
+| 3      | 15 March 2025| Dark/Light Theme Toggle            | Completed   | Beginner |
+| 4      | 15 March 2025| Basic Pop-Up Modal                 | Completed   | Beginner     |
 
 ---
 
@@ -38,9 +38,9 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 ---
 
 ### 🛠️ **Technologies & Tools**
-- **Frontend Development:** HTML, CSS, JavaScript, React
+- **Frontend Development:** HTML, CSS, JavaScript
 - **Version Control:** Git, GitHub
-- **Hosting:** Vercel, Netlify
+- **Hosting:** Vercel
 
 ---
 
