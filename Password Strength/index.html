@@ -26,7 +26,7 @@
 
         h3 {
             color: white;
-            margin-bottom: 0.7rem;
+            margin-bottom: 1rem;
         }
 
         .container {
@@ -41,6 +41,23 @@
             overflow: hidden;
             border-radius: 0.5rem;
             margin:auto;
+            position: relative;
+
+            & label{
+                font-size: 1.3rem;
+                position:absolute;
+                left:0.5rem;
+                padding: 0rem 0.5rem 0rem 0.7rem;
+                pointer-events: none;
+            }
+            & .labelUp{
+                font-size: 0.9rem;
+                position:absolute;
+                left:0px;
+                top:0px;
+                padding: 0rem 0.5rem 0rem 0.7rem;
+                pointer-events: none;
+            }
 
             & input {
                 width: 17rem;
@@ -89,7 +106,8 @@
     <div class="wrapper">
         <h3>Recommanded Password Length 8 to Save Password</h3>
         <div class="container">
-            <input type="password" name="For Password" id="passwordInput" placeholder="Enter Password">
+            <label for="passwordInput">Enter Password</label>
+            <input type="password" name="For Password" id="passwordInput">
             <span></span>
         </div>
         <p></p>
@@ -129,6 +147,7 @@
         btnElem.innerText = `Now Save`;
         btnElem.classList.add('savePass');
         passwordInputElem.addEventListener('input', () => {
+         
             let inputValue = passwordInputElem.value;
             let inputStrength = inputValue.length;
             if (inputStrength > 0 && inputStrength <= 4) {
@@ -154,6 +173,22 @@
                 }, 600)
             })
         })
+
+        const labelElem = document.querySelector('label');
+        if(passwordInputElem.value.length <=0){
+        passwordInputElem.addEventListener('click',()=>{
+                labelElem.classList.add(`labelUp`);
+                labelElem.style.transition = `0.2s ease-in`;
+            })
+        }
+        else if(passwordInputElem.value.length > 0 || passwordInputElem.value.length === ''){
+        passwordInputElem.addEventListener('blur',()=>{
+            labelElem.classList.remove(`labelUp`);
+            labelElem.style.transition = `0.4s ease-out`;
+        })
+        }
+ 
+    
 
     </script>
 </body>
