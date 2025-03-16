@@ -141,13 +141,15 @@
             }
         })
 
+        const labelElem = document.querySelector('label');
         const pErrorElem = document.querySelector('p');
         pErrorElem.textContent = '';
         const btnElem = document.createElement('button');
         btnElem.innerText = `Now Save`;
         btnElem.classList.add('savePass');
         passwordInputElem.addEventListener('input', () => {
-         
+            labelElem.classList.add(`labelUp`);
+            labelElem.style.transition = `0.2s ease-in`;
             let inputValue = passwordInputElem.value;
             let inputStrength = inputValue.length;
             if (inputStrength > 0 && inputStrength <= 4) {
@@ -170,24 +172,21 @@
                 setTimeout(() => {
                     pErrorElem.innerHTML = '';
                     btnElem.remove();
+                    labelElem.classList.remove(`labelUp`);
+                    labelElem.style.transition = `0.2s ease-in`;
+                    passwordInputElem.type = 'password';
+                    spanElem.innerHTML = eyeOpenLogo;
                 }, 600)
             })
         })
 
-        const labelElem = document.querySelector('label');
-        if(passwordInputElem.value.length <=0){
-        passwordInputElem.addEventListener('click',()=>{
-                labelElem.classList.add(`labelUp`);
+        passwordInputElem.addEventListener('blur', () => {
+            if (passwordInputElem.value === '') {
+                labelElem.classList.remove(`labelUp`);
                 labelElem.style.transition = `0.2s ease-in`;
-            })
-        }
-        else if(passwordInputElem.value.length > 0 || passwordInputElem.value.length === ''){
-        passwordInputElem.addEventListener('blur',()=>{
-            labelElem.classList.remove(`labelUp`);
-            labelElem.style.transition = `0.4s ease-out`;
+            }
         })
-        }
- 
+  
     
 
     </script>
