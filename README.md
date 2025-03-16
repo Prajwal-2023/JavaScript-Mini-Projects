@@ -18,6 +18,7 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 
 ---
 # JavaScript-Mini-Projects 🚀
+<p>Completed Projects List Below</p>
 
 | Sr. No | Date         | Project Name                              | Status      | Level        |
 |--------|--------------|-------------------------------------------|-------------|--------------|
@@ -25,15 +26,6 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 | 2      | 15 March 2025| Password Strength Shower           | Completed   | Beginner     |
 | 3      | 15 March 2025| Dark/Light Theme Toggle            | Completed   | Beginner |
 | 4      | 15 March 2025| Basic Pop-Up Modal                 | Completed   | Beginner     |
-
----
-
-### 🌐 **Connect with Me**
-<p align="left">
-  <a href="https://linkedin.com/in/prajwal-joshi" target="blank">
-    <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="prajwal-joshi" height="30" width="40" />
-  </a>
-</p>
 
 ---
 
