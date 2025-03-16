@@ -5,77 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theme Toggleer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Poppins,'Arial';
-        }
-
-        .container {
-            width: 100vw;
-            height: 100vh;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            padding: 2rem;
-            transition:0.5s all ease-in-out;
-        }
-        .dark{
-            color:white;
-            background: #000;
-            transition:0.5s all ease-in-out;
-        }
-
-        img {
-            position: absolute;
-            top: 1rem;
-            right: 1rem;
-            outline: none;
-            border-radius: 50%;
-            width: 3rem;
-            height: 3rem;
-            cursor: pointer;
-            transition:0.5s all ease-in-out;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-        <img src="./theme_dark.png" alt="moon">
+        <img src="./STATIC/theme_dark.png" alt="moon">
         <h1>Theme Changer</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum maiores, deleniti molestiae repellendus unde
             animi porro aliquid eius dignissimos iusto, aspernatur similique quidem placeat eaque voluptate aut vel
             nulla adipisci.</p>
     </div>
-    <script>
-        const imgDarkIconMoon = "./theme_dark.png";
-        const imgLightIconMoon = "./theme_light.png";
-        const imgEleme = document.querySelector('img');
-        imgEleme.style.border = `1px solid black`;
-        const containerEleme = document.querySelector('.container');
-        let FLAG = 0; //Light Theme - 1 for Dark Theme
-        imgEleme.addEventListener('click', () => {
-            containerEleme.classList.toggle('dark');
-            if (FLAG === 0) {
-                imgEleme.src = imgLightIconMoon;
-                imgEleme.style.border = `1px solid white`;
-                imgEleme.style.transition = `0.5s all ease-in-out`;
-                FLAG = 1;
-            } else {
-                imgEleme.src = imgDarkIconMoon;
-                imgEleme.style.border = `1px solid black`;
-                imgEleme.style.transition = `0.5s all ease-in-out`;
-                FLAG = 0;
-            }
-        })
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
