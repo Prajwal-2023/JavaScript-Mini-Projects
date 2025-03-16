@@ -11,8 +11,7 @@
 ### 🔭 **Currently Working On**
 [JavaScript Mini Projects](https://github.com/Prajwal-2023/JavaScript-Mini-Projects) - A collection of small, interactive JavaScript projects to enhance my skills.
 
-### 👨‍💻 **All Projects**
-Check out all my projects at my portfolio: [https://prajwaljoshi.vercel.app/](https://prajwaljoshi.vercel.app/)
+
 
 ### 📫 **How to Reach Me**
 Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
