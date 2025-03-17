@@ -31,10 +31,11 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 
 | Sr. No | Date         | Project Name                              | Status      | Level        |
 |--------|--------------|-------------------------------------------|-------------|--------------|
-| 1      | 15 March 2025| Password Show/Hide                 | Completed   | Beginner     |
-| 2      | 15 March 2025| Password Strength Shower           | Completed   | Beginner     |
-| 3      | 15 March 2025| Dark/Light Theme Toggle            | Completed   | Beginner |
-| 4      | 15 March 2025| Basic Pop-Up Modal                 | Completed   | Beginner     |
+| 1      | 16 March 2025| Password Show/Hide                 | Completed          | Beginner     |
+| 2      | 16 March 2025| Password Strength Shower           | Completed          | Beginner     |
+| 3      | 16 March 2025| Dark/Light Theme Toggle            | Completed          | Beginner     |
+| 4      | 16 March 2025| Basic Pop-Up Modal                 | Completed          | Beginner     | 
+| 5      | 17 March 2025| Basic Toast Popup Model            | Completed          | Beginner     | 
 
 ---
 
