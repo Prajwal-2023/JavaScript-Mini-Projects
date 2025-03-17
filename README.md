@@ -4,3 +4,4 @@
   2.Password Strength Shower
   3.Dark/Light Theme Toggle
   4.Basic Pop Up Model
+  5.Toast Popup Model
