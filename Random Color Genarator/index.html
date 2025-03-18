@@ -1,55 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Poppins,sans-serif;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Poppins, sans-serif;
         }
-        html,body{
-            width:100%;
-            height:100%;
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
         }
-        button{
-            padding:0.7rem 3rem;
-            border:none;
-            border-radius:5px;
-            outline-color:transparent;
+
+        button {
+            padding: 0.7rem 3rem;
+            border: none;
+            border-radius: 5px;
+            outline-color: transparent;
             background-color: #333;
-            color:white;
-            font-weight:500;
-            font-size:2rem;
-            cursor:pointer;
+            color: white;
+            font-weight: 500;
+            font-size: 2rem;
+            cursor: pointer;
         }
-        button:hover{
+
+        button:hover {
             background-color: #3b3b3b;
+            filter: drop-shadow(20px 20px 4px #00000046);
+            transition: filter 0.1s ease;
         }
-        button:active{
-            transform:scale(1.1);
+
+        button:active {
+            transform: scale(1.1);
         }
-        p{
-            font-weight:500;
-            font-size:1.5rem;
+
+        p {
+            font-weight: 900;
+            font-size: 1rem;
+            text-align: center;
+            margin-top: 3rem;
+            background-color: #c5c5c59d;
+            padding: 0.4rem 1rem;
+            text-wrap: nowrap;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            width: auto;
+
+            & img {
+                cursor: pointer;
+            }
         }
     </style>
 </head>
+
 <body>
     <main>
         <button>Generate</button>
-        <p>Color is : <span>REd</span></p>
+        <p>Color is :<span> White</span><img src="./STATIC/copy_color.svg" alt="Copy Color"></p>
     </main>
+    <!-- math.floor vs math.ceil vs math.round 
+        eg
+            math.floor((math.random) * 2) 
+            math.floor -> 0 or 1 not the number you gave 
+            math.round -> 0 or 1 or 2  round the number you gave like 1.60 -> will be 2 like that 
+            math.ceil ->  1 or 2  as ceil never give the zero until multiplying by 0 if there is the number you gave like 0 -> will be 0 like that 
+            or if you gave any number 1 or any grater than 0 it will ceil to the nearest number or greater number than zero
+    -->
     <script>
         const button = document.querySelector('button');
         const colorSpan = document.querySelector('span');
+        const pTag = document.querySelector('p');
+
+        function randomColor() {
+            const red = Math.round(Math.random() * 255);
+            const green = Math.round(Math.random() * 255);
+            const blue = Math.round(Math.random() * 255);
+
+            const colorIs = ` rgb(${red}, ${green}, ${blue})`;
+
+            return colorIs;
+        }
+        button.addEventListener('click', () => {
+            const bgColor = randomColor();
+            pTag.style.display =  `flex`;
+            colorSpan.textContent = bgColor;
+            const mainBg = document.querySelector('html');
+            mainBg.style.background = bgColor;
+
+        const copyButton = document.querySelector('img');
+        copyButton.addEventListener('click', () => {
+                navigator.clipboard.writeText(bgColor)
+                    .then(() => alert(`Color ${bgColor} is Copied To Clipboard!`))
+                    .catch((err) => console.log("Failed to Copy:", err));
+            })
+        })
 
     </script>
 </body>
+
 </html>
