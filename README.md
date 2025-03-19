@@ -28,6 +28,7 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 | 4      | 16 March 2025| Basic Pop-Up Modal                 | Completed          | Beginner     | 
 | 5      | 17 March 2025| Basic Toast Popup Model            | Completed          | Beginner     | 
 | 6      | 18 March 2025| Random Color Gernator and Copy Btn | Completed          | Beginner     | 
+| 7      | 19 March 2025| Bulb On & Off Toggle Image         | Completed          | Beginner     | 
 
 ---
 
