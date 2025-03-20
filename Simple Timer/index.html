@@ -5,66 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Timer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Poppins, sans-serif;
-        }
-
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(#b3ebb3, #7b7bce);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-
-
-        }
-
-        body>p {
-            font-size: 3rem;
-            color: #114588;
-        }
-
-        .main_div {
-            width: 25rem;
-            height: 12rem;
-            background: #f7f7f7;
-            border-radius: 0.7rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: column;
-            backdrop-filter: blur(100px);
-            filter: drop-shadow(0px 0px 30px #ffffffc2);
-            text-align: center;
-        }
-
-        p {
-            font-size: 4rem;
-        }
-
-        button {
-            padding: 0.5rem 1.8rem;
-            border: none;
-            font-size: 1.1rem;
-            outline-color: none;
-            background: #2b8692;
-            border-radius: 0.3rem;
-            color: white;
-            font-weight: 600;
-            cursor: pointer;
-        }
-
-        button:active {
-            transform: scale(1.1);
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
+ 
 </head>
 
 <body>
@@ -76,41 +18,7 @@
             <button id="reset">Reset</button>
         </div>
     </div>
-    <script>
-        const pElem = document.querySelector('#timerP');
-        const buttonElem = document.querySelector('button');
-        const resetBtnElem = document.querySelector('#reset');
-        const titleElem = document.querySelector('#title');
-
-        buttonElem.addEventListener('click', () => {
-            let countTimer = 10;
-            buttonElem.disabled = true;
-            buttonElem.style.cursor = 'not-allowed';
-            buttonElem.style.background = '#dadada';
-            buttonElem.textContent = 'Started';
-            resetBtnElem.style.display = `none`;
-            titleElem.textContent = `Your 10s Timer is Started`;
-
-            const countDown = setInterval(() => {
-                countTimer--;
-                pElem.textContent = countTimer;
-
-                if (countTimer === 0) {
-                    clearInterval(countDown);
-                    buttonElem.disabled = false;
-                    buttonElem.style.cursor = 'pointer';
-                    buttonElem.style.background = '#2b8692';
-                    buttonElem.textContent = 'Start';
-                    resetBtnElem.style.display = `flex`;
-                    titleElem.textContent = `Time Up !!!`;
-                    resetBtnElem.addEventListener('click', () => {
-                        titleElem.textContent = `Start Your 10s Timer`;
-                        pElem.textContent = '10';
-                    })
-                }
-            }, 1000);
-        })
-    </script>
+    <script src="./scipt.js"></script>
 </body>
 
 </html>
