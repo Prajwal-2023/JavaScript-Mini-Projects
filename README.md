@@ -30,6 +30,7 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 | 6      | 18 March 2025| Random Color Gernator and Copy Btn | Completed          | Beginner     | 
 | 7      | 19 March 2025| Bulb On & Off Toggle Image         | Completed          | Beginner     | 
 | 8      | 20 March 2025| Simple Timer                       | Completed          | Beginner     | 
+| 9      | 20 March 2025| Random Quote Generator             | Completed          | Beginner     | 
 
 ---
 
