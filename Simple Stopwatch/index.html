@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family:Poppins, Arial, Helvetica, sans-serif;
+    }
+    html,
+    body{
+        width:100%;
+        height:100%;
+        display:flex;
+        align-items: center;
+        justify-content:center;
+        flex-direction: column;
+        gap:1rem;
+    }
+    div{
+        width:14rem;
+        height:7rem;
+        padding:1rem;
+        font-size:1.2rem;
+        background:#222;
+        color:white;
+        font-weight:600;
+        display:grid;
+        place-content: center;
+        align-items: center;
+        grid-template-columns: auto 10px auto 10px auto;
+        grid-template-rows: auto;
+        gap:0.7rem;
+        border-radius:0.5rem;
+        text-align:center;
+    }
+    div p:nth-child(odd){
+        color:#c1c412;
+        font-size:1.7rem;
+    }
+    button{
+        width:10rem;
+        height:3rem;
+        padding:0.5rem 2rem;
+        font-size:1.2rem;
+        background:#c1c412;
+        color:white;
+        font-weight:600;
+        border-radius:0.5rem;
+        outline-color:none;
+        border:none;
+        cursor:pointer;
+    }
+</style>
+</head>
+<body>
+    <div>
+        <p id="forHours">00</p>
+        <p>:</p>
+        <p id="forMinutes">00</p>
+        <p>:</p>
+        <p id="forSeconds">00</p>
+    </div>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+    <button id="resetButton">Reset</button>
+    <script>
+      
+        const forHoursElem = document.querySelector('#forHours');
+        const forMinutesElem = document.querySelector('#forMinutes');
+        const forSecondsElem = document.querySelector('#forSeconds');
+        //button below
+        const startButtonElem = document.querySelector('#startButton');
+        const stopButtonElem = document.querySelector('#stopButton');
+        const resetButtonElem = document.querySelector('#resetButton');
+        
+        let forSecondValue= 0;
+        let forMinutesElemValue = 0;
+        let secondTimerConatiner = 0;
+
+        startButtonElem.addEventListener('click',startTimer);
+        stopButtonElem.addEventListener('click',stopTimer);
+        resetButtonElem.addEventListener('click',resetTimer);
+
+        function startTimer(){
+            secondTimerConatiner = 1000;
+            setInterval(()=>{
+            if(forSecondValue <= 60){
+                forSecondValue < 10 ? 
+                forSecondsElem.textContent = `0${forSecondValue}`
+                :
+                forSecondsElem.textContent = forSecondValue;
+                forSecondValue ++
+            }else{
+                console.warn('lOOP COMPLETED' + forSecondValue)
+                forSecondValue = 0;
+                forMinutesElemValue ++;
+                forMinutesElemValue < 10 ? 
+                forMinutesElem.textContent = `0${forMinutesElemValue}`
+                :
+                forMinutesElem.textContent = forMinutesElemValue;
+            }
+       
+        },secondTimerConatiner);
+    }
+
+    function stopTimer(){
+        console.log(forMinutesElemValue);
+        console.log(forSecondValue);
+        console.log(secondTimerConatiner);
+        secondTimerConatiner = 0;
+        forMinutesElem.textContent = ``;
+        forMinutesElemValue < 10 ? 
+        forMinutesElem.textContent = `0${forMinutesElemValue}`
+        :
+        forMinutesElem.textContent = forMinutesElemValue;
+        secondTimerConatiner = 0;
+
+    }
+
+
+    </script>
+</body>
+</html>
