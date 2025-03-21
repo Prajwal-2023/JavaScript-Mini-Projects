@@ -3,7 +3,7 @@ const divElem = document.querySelector('div');
 const spanElem = document.querySelector('span');
 let diceNumberIS = 0;
 buttonElem.addEventListener('click', () => {
-    divElem.style.animation = `rollDice 2s infinite ease-in-out`;
+    divElem.style.animation = `rollDice 0.5s infinite ease-in-out`;
     buttonElem.disabled = true;
     buttonElem.style.background = '#646464fa';
     buttonElem.style.cursor = 'not-allowed';
@@ -26,7 +26,7 @@ buttonElem.addEventListener('click', () => {
                 <p></p>`;
                 divElem.style.gridTemplateColumns = `auto auto auto`;
                 divElem.style.gridTemplateRows = `auto auto auto`;
-            },2000);
+            },700);
             callTimeOut();
             break;
 
@@ -39,7 +39,7 @@ buttonElem.addEventListener('click', () => {
                     <span></span>`;
             divElem.style.gridTemplateColumns = `auto`;
             divElem.style.gridTemplateRows = `auto auto`;
-        },2000)
+        },700)
             callTimeOut();
             break;
 
@@ -57,7 +57,7 @@ buttonElem.addEventListener('click', () => {
                 <span></span>`;
             divElem.style.gridTemplateColumns = `auto auto auto`;
             divElem.style.gridTemplateRows = `auto auto auto`;
-        },2000)
+        },700)
             callTimeOut();
             break;
 
@@ -77,7 +77,7 @@ buttonElem.addEventListener('click', () => {
                     <span></span>`;
             divElem.style.gridTemplateColumns = `auto auto auto`;
             divElem.style.gridTemplateRows = `auto auto auto`;
-        },2000)
+        },700)
             callTimeOut();
             break;
 
@@ -98,7 +98,7 @@ buttonElem.addEventListener('click', () => {
                     <span></span>`;
             divElem.style.gridTemplateColumns = `auto auto auto`;
             divElem.style.gridTemplateRows = `auto auto auto`;
-        },2000)
+        },700)
             callTimeOut();
             break;
 
@@ -116,7 +116,7 @@ buttonElem.addEventListener('click', () => {
                 <span></span>`;
             divElem.style.gridTemplateColumns = `auto auto auto`;
             divElem.style.gridTemplateRows = `auto auto`;
-            },2000);
+            },700);
             callTimeOut();
             break;
 
@@ -133,5 +133,5 @@ function callTimeOut() {
         buttonElem.style.cursor = 'pointer';
         divElem.style.animation = '';
         divElem.style.filter = `blur(0px)`;
-    }, 2000)
+    }, 500)
 }
