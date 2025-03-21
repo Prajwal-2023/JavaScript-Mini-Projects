@@ -1,3 +1,4 @@
+<p align="center">JJavaScript Mni Projects</p>
 <h1 align="center">Hi 👋, I'm Prajwal Joshi</h1>
 <h3 align="center">A passionate frontend developer from India 🇮🇳</h3>
 
