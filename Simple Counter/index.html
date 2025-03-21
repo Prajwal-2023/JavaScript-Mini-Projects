@@ -5,59 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Poppins,sans-serif;
-        }
-
-        html,
-        body {
-            width: 100%;
-            height: 100%;
-            background: #333;
-            place-items: center;
-            display:grid;
-            grid-template-rows: auto  auto;
-        }
-        h2{
-            text-align:center;
-            color:white;
-            padding:2rem;
-        }
-        .main_div {
-            width: 20rem;
-            height: 7rem;
-            padding: 1rem;
-            background: #fff;
-            border-radius: 0.6rem;
-            display: grid;
-            place-items: center;
-            grid-template-columns: repeat(3, auto);
-
-            & p {
-                font-size: 2rem;
-                font-weight: 700;
-            }
-
-            & button {
-                width: 5rem;
-                height: 3rem;
-                font-size: 1.8rem;
-                background: #4b33e5;
-                border-radius: 0.4rem;
-                outline-color: none;
-                border: none;
-                cursor: pointer;
-            }
-
-            & button:hover {
-                background: #2a16ae;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
@@ -67,30 +15,7 @@
         <p></p>
         <button id="increaseValue"> + </button>
     </div>
-    <script>
-        const decreaseValueBtn = document.querySelector('#decreaseValue');
-        const pElem = document.querySelector('p');
-        const increaseValueBtn = document.querySelector('#increaseValue');
-        let showValue = 0;
-        decreaseValueBtn.style.cursor = 'not-allowed';
-        pElem.textContent = showValue
-        decreaseValueBtn.addEventListener('click', () => {
-            if (showValue > 0) {
-                showValue--
-                pElem.textContent = `${showValue}`
-
-            }
-            if (showValue === 0) {
-                decreaseValueBtn.style.cursor = 'not-allowed';
-            }
-        })
-        increaseValueBtn.addEventListener('click', () => {
-            decreaseValueBtn.style.cursor = 'pointer';
-            showValue++;
-            pElem.textContent = `${showValue}`;
-        })
-
-    </script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
