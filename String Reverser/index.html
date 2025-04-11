@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>String Reverser</title>
 </head>
+
 <body>
     <div class="main">
         <h2>Reversed String is : <span></span></h2>
         <input type="text" placeholder="Enter Your String">
         <button>Click To Reverse</button>
     </div>
+    <script>
+        const inputElem = document.querySelector('input');
+        const buttonElem = document.querySelector('button');
+        const showOutPut = document.querySelector('.main h2 span');
+
+
+        function reverseString(userInput) {
+            let store = '';
+            for (let i = userInput.length - 1; i >= 0; i--) {
+                store = store + userInput[i];
+            }
+            return store;
+        }
+
+        buttonElem.addEventListener("click", () => {
+            const userInput = inputElem.value;
+            const reversed = reverseString(userInput);
+            showOutPut.textContent = reversed;
+        })
+        console.log(store)
+    </script>
 </body>
+
 </html>
