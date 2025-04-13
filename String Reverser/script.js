@@ -18,7 +18,12 @@ function reverseString(userInput) {
         buttonElem.addEventListener("click", () => {
             const userInput = inputElem.value;
             const reversed = reverseString(userInput);
-            showOutPut.innerHTML = '';
-            showOutPut.innerHTML += `<span>Reversed String is:</span><br><h6 style="text-align:center;color:orangered;">${reversed}</h6>`;
+            if(userInput.length === 0 || userInput.trim() === ''){
+                showOutPut.innerHTML = '';
+                showOutPut.innerHTML += `<span>String is:</span><br><h6 style="text-align:center;color:orangered;">Not Given</h6>`;
+            }else{
+                showOutPut.innerHTML = '';
+                showOutPut.innerHTML += `<span>Reversed String is:</span><br><h6 style="text-align:center;color:orangered;">${reversed}</h6>`;
+            }
         })
     
