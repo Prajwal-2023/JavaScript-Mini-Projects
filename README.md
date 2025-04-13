@@ -34,7 +34,8 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 | 9      | 20 March 2025| Random Quote Generator             | Completed          | Beginner     | 
 | 10     | 21 March 2025| Dice Roller                        | Completed          | Beginner     | 
 | 11     | 21 March 2025| Simple Counter                     | Completed          | Beginner     | 
-| 12     | 11 April 2025| String Reverser                    | Completed            | Beginner     | 
+| 12     | 13 April 2025| String Reverser                    | Completed            | Beginner     | 
+| 13    | 14 April 2025| Factorial Checker                    | Completed            | Beginner     | 
 
 ---
 
