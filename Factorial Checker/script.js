@@ -17,8 +17,8 @@ function reverseString(userInput) {
     } 
         buttonElem.addEventListener("click", () => {
             const userInput = inputElem.value;
-            const reversed = reverseString(userInput);
+            const factorialNum = reverseString(userInput);
             showOutPut.innerHTML = '';
-            showOutPut.innerHTML += `<span>Reversed String is:</span><br><h6 style="text-align:center;color:orangered;">${reversed}</h6>`;
+            showOutPut.innerHTML += `<span>Factorial is:</span><br><h6 style="text-align:center;color:orangered;">${factorialNum}</h6>`;
         })
     
