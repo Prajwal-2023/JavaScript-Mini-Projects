@@ -14,5 +14,5 @@ function reverseString(userInput) {
 buttonElem.addEventListener("click", () => {
     const userInput = inputElem.value;
     const reversed = reverseString(userInput);
-    showOutPut.innerHTML = `Reversed String is :${reversed}`;
+    showOutPut.innerHTML = `<span>Reversed String is:</span><br><h6 style="text-align:center;color:orangered;">${reversed}</h6>`;
 })
