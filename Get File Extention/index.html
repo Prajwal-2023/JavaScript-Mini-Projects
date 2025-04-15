@@ -26,8 +26,24 @@
 </head>
 <body>
     <div class="main">
+        <h1></h1>
         <input type="file" placeholder="Upload or Drag and Drop Your File">
         <button>Check Extention</button>
     </div>
+    <script>
+        const h1Elem = document.querySelector('h1');
+        const getFileInput = document.querySelector('input');
+        const buttonElem = document.querySelector('button');
+        const userUploaded = getFileInput.value;
+
+        buttonElem.addEventListener('click',()=>{
+
+            const fileExtention = userUploaded.slice(lastIndexOf('.'));
+            
+            h1Elem.innerHTML = fileExtention;
+        })
+
+
+    </script>
 </body>
 </html>
