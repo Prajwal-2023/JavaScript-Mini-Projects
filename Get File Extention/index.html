@@ -37,10 +37,9 @@
         const userUploaded = getFileInput.value;
 
         buttonElem.addEventListener('click',()=>{
-
-            const fileExtention = userUploaded.slice(lastIndexOf('.'));
-            
-            h1Elem.innerHTML = fileExtention;
+            const fileExtention = userUploaded.slice(userUploaded.lastIndexOf('.'));
+            console.log(h1Elem)
+            h1Elem.textContent = fileExtention;
         })
 
 
