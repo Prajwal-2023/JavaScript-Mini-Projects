@@ -8,16 +8,31 @@
 <body>
     <h1></h1>
     <input type="text">
+    <span></span>
     <button>Check for Palindrome</button>
     <script>
         const h1Elem = document.querySelector('h1')
-        const inputElem = document.querySelector('input')
+        const inputElem = document.querySelector('input');
+        const spanElem = document.querySelector('span');
         const btnElem = document.querySelector('button');
 
-        function palidromeChecker(){
-            
+        btnElem.addEventListener('click',()=>{
+            h1Elem.textContent = palidromeChecker(inputElem.value);
+            if(inputElem.value === store){
+                spanElem.textContent = '';
+                spanElem.textContent = `Given ${inputElem.value} is a Palindrome`;
+            }else{
+                spanElem.textContent = '';
+                spanElem.textContent = `Given ${inputElem.value} is Not a Palindrome`;
+            }
+        })
+        let store ='';
+        function palidromeChecker(val){
+            for(let i = val.length-1; i >= 0; i--){
+                store += val[i];
+            }
+            return store;
         }
-
     </script>
 </body>
 </html>
