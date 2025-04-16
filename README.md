@@ -37,6 +37,7 @@ Feel free to reach out to me via email: **prajwal.joshi.2002@gmail.com**
 | 12     | 13 April 2025| String Reverser                    | Completed            | Beginner     | 
 | 13    | 14 April 2025| Factorial Checker                    | Completed            | Beginner     | 
 | 14    | 15 April 2025| Extention Checker                    | Completed            | Beginner     | 
+| 15    | 16 April 2025| Count Number Sum                    | Completed            | Beginner     | 
 
 ---
 
