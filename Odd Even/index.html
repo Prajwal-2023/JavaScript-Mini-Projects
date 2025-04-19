@@ -15,12 +15,15 @@
         const btnElem = document.querySelector('button')
 
         function oddEvenChecker(val){
-            
-
+            if(val === 0 || val % 2 === 0){
+                h1Elem.textContent = `${val} It is a Even Number`;
+            }else{
+                h1Elem.textContent = `${val} It is a Odd Number`;
+            }
         }
 
         btnElem.addEventListener('click',()=>{
-            h1Elem.textContent = oddEvenChecker(inputElem.value)
+            oddEvenChecker(inputElem.value)
         })
 
     </script>
