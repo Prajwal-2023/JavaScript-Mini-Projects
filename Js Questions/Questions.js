@@ -22,4 +22,22 @@ const sumOfNumber = (num) => {
     // }
     return console.log((num*(num+1))/2);  // In One Line
 }
-sumOfNumber(2);
+// sumOfNumber(2);
+
+
+// Number Factorial
+
+const factorialOfNumber = (userNum) => {
+    let fact = 1;
+    if (userNum === 0 || userNum === 1)
+        console.log('Factorial is One');
+
+    for (let i = userNum; i > 0; i--) {
+        fact = fact * i
+    }
+    return fact;
+}
+
+// console.warn(factorialOfNumber(1));
+
+
