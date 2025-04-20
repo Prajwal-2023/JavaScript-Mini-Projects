@@ -40,4 +40,16 @@ const factorialOfNumber = (userNum) => {
 
 // console.warn(factorialOfNumber(1));
 
+// Prime Number 
+
+const primeNumber = (numIn) =>{
+    if(numIn < 2){
+        console.log('Prime is Nt Possible')
+    }
+    if(numIn % 2 != 0){
+        console.log(`${numIn} is a Prime Number`)
+    }
+}
+
+primeNumber(4)
 
