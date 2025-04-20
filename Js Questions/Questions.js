@@ -9,3 +9,17 @@
  }
  // stringReverser('Prajwal')
  
+
+ // sum of 1 to n number
+
+const sumOfNumber = (num) => {
+
+    // let db = 0;
+
+    // for (let i = num; i > 0; i--) {
+    //     db = db + i;
+
+    // }
+    return console.log((num*(num+1))/2);  // In One Line
+}
+sumOfNumber(2);
